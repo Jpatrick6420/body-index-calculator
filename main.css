@@ -64,6 +64,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.main-header__form--container button {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.main-header__form--container button:active,
+.main-header__form--container button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.main-header__results--button {
+  text-align: center;
+}
 
 form .main-header__form--measurement {
   display: flex;
@@ -77,8 +96,85 @@ form .main-header__form--measurement {
   font-weight: 600;
 }
 
+.metric label,
+.imperial label {
+  font-weight: 600;
+}
+
+.main-form__height label,
+.main-form__weight label {
+  display: block;
+  color: #999999;
+  font-size: 0.84rem;
+}
+
+.main-form__height input,
+.main-form__weight input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.main-form__input-outline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.main-header__form-header {
+  padding-bottom: 1rem;
+}
+
+.main-header__results--content {
+  color: white;
+  background-color: blue;
+  border-radius: 25px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.main-header__results--title,
+.main-header__results--answer,
+.main-header__results--explanation {
+  margin: 0.5rem auto;
+}
+
 .results__section-img img {
   display: block;
   width: 28rem;
-  margin: 0 auto;
+  margin: 5rem auto;
+}
+
+.article-text {
+  color: #999999;
+}
+
+.results__content {
+  padding: 0 2rem 3rem 1rem;
+}
+.results__content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.recommendations {
+  margin: 1rem;
+}
+
+.recommendations__container {
+  padding-bottom: 2rem;
+}
+.recommendations__container img {
+  margin-bottom: 1rem;
+}
+.recommendations__container h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.recommendations__container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

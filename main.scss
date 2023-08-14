@@ -10,11 +10,12 @@ $colors: (
   secondary: blue,
   container-background-color: white,
   background-color: rgba(190, 231, 247, 0.2),
+  article-text: lighten(black, 60%),
 );
 $font-size: (
   main: 1.2rem,
   heading: 3rem,
-  sub-heading: 2rem,
+  sub-heading: 1.6rem,
 );
 $container-border-radius: 25px;
 
@@ -82,8 +83,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: map-get($map: $colors, $key: secondary);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  button:active,
+  button:hover {
+    background-color: white;
+    color: map-get($colors, secondary);
+  }
 }
-
+.main-header__results--button {
+  text-align: center;
+}
 form {
   .main-header__form--measurement {
     display: flex;
@@ -96,8 +114,77 @@ form {
   color: map-get($map: $colors, $key: secondary);
   font-weight: map-get($map: $font-weight, $key: heading);
 }
+.metric label,
+.imperial label {
+  font-weight: map-get($map: $font-weight, $key: heading);
+}
+
+.main-form__height label,
+.main-form__weight label {
+  display: block;
+  color: map-get($map: $colors, $key: article-text);
+  font-size: map-get($map: $font-size, $key: main) * 0.7;
+}
+.main-form__height input,
+.main-form__weight input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-weight: map-get($map: $font-weight, $key: heading);
+}
+.main-form__input-outline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+.main-header__form-header {
+  padding-bottom: 1rem;
+}
+
+.main-header__results--content {
+  color: white;
+  background-color: map-get($map: $colors, $key: secondary);
+  border-radius: $container-border-radius;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.main-header__results--title,
+.main-header__results--answer,
+.main-header__results--explanation {
+  margin: 0.5rem auto;
+}
 .results__section-img img {
   display: block;
   width: 28rem;
-  margin: 0 auto;
+  margin: 5rem auto;
+}
+.article-text {
+  color: map-get($map: $colors, $key: article-text);
+}
+.results__content {
+  padding: 0 2rem 3rem 1rem;
+  h3 {
+    font-size: map-get($map: $font-size, $key: sub-heading);
+    font-weight: map-get($map: $font-weight, $key: heading);
+    margin: 1rem 0;
+  }
+}
+.recommendations {
+  margin: 1rem;
+}
+.recommendations__container {
+  //   padding: 0 1rem;
+  padding-bottom: 2rem;
+  img {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: map-get($map: $font-size, $key: sub-heading);
+    font-weight: map-get($font-weight, heading);
+  }
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }

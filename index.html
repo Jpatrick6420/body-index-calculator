@@ -31,37 +31,42 @@
               <label for="measurement">Imperial</label>
             </div>
           </div>
-          <div>
+          <div class="main-form__height">
             <label for="height" class="main-header__form-input-heading"
               >Height</label
             >
-            <input
-              name="height"
-              type="number"
-              class="main-header__form--number"
-            />
-            <p class="main-header__form--input-label">cm</p>
+            <div class="main-form__input-outline">
+              <input
+                name="height"
+                type="number"
+                class="main-header__form--number"
+              />
+              <p class="main-header__form--input-label">cm</p>
+            </div>
           </div>
-          <div>
+          <div class="main-form__weight">
             <label for="weight">Weight</label>
-            <input
-              name="weight"
-              type="number"
-              class="main-header__form--number"
-            />
-            <p class="main-header__form--input-label">kg</p>
+            <div class="main-form__input-outline">
+              <input
+                name="weight"
+                type="number"
+                class="main-header__form--number"
+              />
+              <p class="main-header__form--input-label">kg</p>
+            </div>
           </div>
         </form>
 
         <div class="main-header__results--container">
-          <div class="main-header__results--button">
+          <div class="main-header__results--button hidden">
             <button type="submit">Submit</button>
           </div>
-          <div class="main-header__results--content hidden">
+          <div class="main-header__results--content">
             <h3 class="main-header__results--title">Your BMI is...</h3>
             <h1 class="main-header__results--answer">23.4</h1>
             <p class="main-header__results--explanation">
-              Your BMI suggests you're . Your ideal weight is between .
+              Your BMI suggests you're . Your ideal weight is between
+              <span class="bmi-recommendation">63kgs - 85kgs</span>.
             </p>
           </div>
         </div>
@@ -71,8 +76,9 @@
       <div class="results__section-img">
         <img src="./images/image-man-eating.webp" alt="image of man eating" />
       </div>
-      <div>
-        <p class="results__content">
+      <div class="results__content">
+        <h3>What your BMI resluts means</h3>
+        <p class="article-text">
           A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
           Maintaining a healthy weight may lower your chances of experiencing
           health issues later on, such as obesity and type 2 diabetes. Aim for a
@@ -85,14 +91,16 @@
     <section class="recommendations">
       <div class="recommendations__container">
         <img src="images/icon-eating.svg" alt="eating icon" />
-        <p>
+        <h1>Healthy Eating</h1>
+        <p class="article-text">
           Healthy eating Healthy eating promotes weight control, disease
           prevention, better digestion, immunity, mental clarity, and mood.
         </p>
       </div>
       <div class="recommendations__container">
         <img src="images/icon-exercise.svg" alt="excersize icon" />
-        <p>
+        <h1>Regular Excersize</h1>
+        <p class="article-text">
           Regular exercise Exercise improves fitness, aids weight control,
           elevates mood, and reduces disease risk, fostering wellness and
           longevity.
@@ -100,7 +108,8 @@
       </div>
       <div class="recommendations__container">
         <img src="images/icon-sleep.svg" alt="sleep icon" />
-        <p>
+        <h1>Adequate Sleep</h1>
+        <p class="article-text">
           Adequate sleep Sleep enhances mental clarity, emotional stability, and
           physical wellness, promoting overall restoration and rejuvenation.
         </p>

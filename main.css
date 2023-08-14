@@ -1,27 +1,19 @@
-$primary-font: "inter";
-$colors: (
-  main: black,
-  secondary: #afafff,
-);
-$font-size: (
-  main: 1.2rem,
-  heading: 3rem,
-  sub-heading: 2rem,
-);
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 .main-header {
   text-align: center;
   background-image: linear-gradient(to right, white 30%, rgba(0, 0, 248, 0.3));
 }
-.main-header__title {
-  font-size: map-get($map: $font-size, $key: heading);
 
+.main-header__title {
+  font-size: 3rem;
   width: 80%;
 }
+
 .results__section-img img {
   display: block;
   width: 28rem;

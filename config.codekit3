@@ -207,7 +207,7 @@
   "projectAttributes" : {
     "creationDate" : 713652692.95756102,
     "displayValue" : "bmi-calculator",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-peach",
     "iconImageWasSetByUser" : 0
   },

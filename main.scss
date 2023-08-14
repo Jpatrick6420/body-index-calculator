@@ -223,3 +223,34 @@ form {
 .card-heading {
   padding-bottom: 2rem;
 }
+@media (min-width: 760px) {
+  .main-header,
+  .main-header__title,
+  .main-header__content {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .main-header__title {
+    padding: 1rem 1rem;
+  }
+  .main-header__form--container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .main-header__form-header {
+    grid-column: span 2;
+  }
+  .main-header__results--container {
+    grid-column: span 2;
+  }
+  //   .main-header {
+  //     display: grid;
+  //     grid-template-columns: 50% 50%;
+  //   }
+  //   #header-image {
+  //     grid-column-start: 1;
+  //     grid-column-end: 3;
+  //     justify-self: center;
+  //   }
+}

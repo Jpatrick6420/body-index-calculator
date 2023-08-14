@@ -183,3 +183,33 @@ form .main-header__form--measurement {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+.limitations-card__header h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.limitations-card__header p {
+  padding: 0 1rem 2rem 2rem;
+}
+
+.limitations-card {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-heading img {
+  width: 3rem;
+}
+
+.card-heading img,
+.card-heading h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.card-heading {
+  padding-bottom: 2rem;
+}

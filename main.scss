@@ -188,7 +188,38 @@ form {
     margin-bottom: 1rem;
   }
 }
+
 .title-text {
   font-size: map-get($map: $font-size, $key: sub-heading);
   font-weight: map-get($map: $font-weight, $key: heading);
+}
+
+.limitations-card__header {
+  h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  p {
+    padding: 0 1rem 2rem 2rem;
+  }
+}
+
+.limitations-card {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: $container-border-radius;
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+}
+.card-heading img {
+  width: 3rem;
+}
+.card-heading img,
+.card-heading h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.card-heading {
+  padding-bottom: 2rem;
 }

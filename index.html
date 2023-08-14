@@ -3,6 +3,151 @@
   <head>
     <title>BMI Calculator</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="main-header">
+        <img src="./images/logo.svg" alt="logo" />
+        <h1 class="main-header__title">Body Mass Index Calculator</h1>
+        <p class="main-header__content">
+          Better understand your weight in relation to your height using our
+          body mass index (BM) calculator. While BMI is not the sole determinant
+          of a healthy weight, it offers a valuable starting point to evaluate
+          your overall health and well-being.
+        </p>
+      </div>
+      <div class="main-header__form--container">
+        <h2 class="main-header__form-header">Enter your details below</h2>
+        <form method="get">
+          <div class="main-header__form--measurement">
+            <input type="radio" name="measurement" value="Metric" />
+            <label for="measurment">Metric</label>
+            <input type="radio" name="measurement" value="Imperial" />
+            <label fro="measurement">Imperial</label>
+          </div>
+          <div>
+            <label for="height" class="main-header__form-input-heading"
+              >Height</label
+            >
+            <input
+              name="height"
+              type="number"
+              class="main-header__form--number"
+            />
+            <p class="main-header__form--input-label">cm</p>
+          </div>
+          <div>
+            <label for="weight">Weight</label>
+            <input
+              name="weight"
+              type="number"
+              class="main-header__form--number"
+            />
+            <p class="main-header__form--input-label">kg</p>
+          </div>
+        </form>
+      </div>
+      <div class="main-header__results--container">
+        <div class="main-header__results--button">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="main-header__results--content">
+          <h3 class="main-header__results--title">Your BMI is...</h3>
+          <h1 class="main-header__results--answer">23.4</h1>
+          <p class="main-header__results--explanation">
+            Your BMI suggests you're . Your ideal weight is between .
+          </p>
+        </div>
+      </div>
+    </main>
+    <section class="results">
+      <div class="results__section-img">
+        <img src="./images/image-man-eating.webp" alt="image of man eating" />
+      </div>
+      <div>
+        <p class="results__content">
+          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+          Maintaining a healthy weight may lower your chances of experiencing
+          health issues later on, such as obesity and type 2 diabetes. Aim for a
+          nutritious diet with reduced fat and sugar content, incorporating
+          ample fruits and vegetables. Additionally, strive for regular physical
+          activity, ideally about 30 minutes daily for five days a week.
+        </p>
+      </div>
+    </section>
+    <section class="recommendations">
+      <div class="recommendations__container">
+        <img src="images/icon-eating.svg" alt="eating icon" />
+        <p>
+          Healthy eating Healthy eating promotes weight control, disease
+          prevention, better digestion, immunity, mental clarity, and mood.
+        </p>
+      </div>
+      <div class="recommendations__container">
+        <img src="images/icon-exercise.svg" alt="excersize icon" />
+        <p>
+          Regular exercise Exercise improves fitness, aids weight control,
+          elevates mood, and reduces disease risk, fostering wellness and
+          longevity.
+        </p>
+      </div>
+      <div class="recommendations__container">
+        <img src="images/icon-sleep.svg" alt="sleep icon" />
+        <p>
+          Adequate sleep Sleep enhances mental clarity, emotional stability, and
+          physical wellness, promoting overall restoration and rejuvenation.
+        </p>
+      </div>
+    </section>
+    <section class="limitations">
+      <div class="limitations-card__header">
+        <h1>Limitations of BMI</h1>
+        <p>
+          Although BMI is often a practical indicator of healthy weight, it is
+          not suited for every person. Specific groups should carefully consider
+          their BMI outcomes, and in certain cases, the measurement may not be
+          beneficial to use.
+        </p>
+      </div>
+      <!--
+      <div class="limitations-card">
+        <img
+          src="./images/icon-gender.svg"
+          alt="gender icon"
+          class="limitations-card__icon"
+        />
+        <h3 class="limitations-card__title">Gender</h3>
+        <p class="limitations-card__content">
+          The development and body fat composition of girls and boys vary with
+          age. Consequently, a child's age and gender are considered when
+          evaluating their BMI.
+        </p>
+      </div>
+      <div class="limitations-card">
+        <img
+          src="./images/icon-age.svg"
+          alt="age icon"
+          class="limitations-card__icon"
+        />
+        <h3 class="limitations-card__title">Age</h3>
+        <p class="limitations-card__content">
+          In aging individuals, increased body fat and muscle loss may cause BMI
+          to underestimate body fat content.
+        </p>
+      </div>
+      <div class="limitations-card">
+        <img
+          src="./images/icon-age.svg"
+          alt="age icon"
+          class="limitations-card__icon"
+        />
+        <h3 class="limitations-card__title">Age</h3>
+        <p class="limitations-card__content">
+          In aging individuals, increased body fat and muscle loss may cause BMI
+          to underestimate body fat content.
+        </p>
+      </div>-->
+    </section>
+  </body>
 </html>

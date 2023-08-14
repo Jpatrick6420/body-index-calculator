@@ -178,3 +178,8 @@ form .main-header__form--measurement {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.title-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}

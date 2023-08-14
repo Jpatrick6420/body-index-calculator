@@ -44,7 +44,7 @@ cards.map((el) => {
         <img
           src="${el.img}"
         />
-        <h3 class="limitations-card__title">${el.header}</h3>
+        <h3 class="limitations-card__title title-text">${el.header}</h3>
         <p class="limitations-card__content">
           ${el.content}
         </p>

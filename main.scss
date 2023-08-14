@@ -188,3 +188,7 @@ form {
     margin-bottom: 1rem;
   }
 }
+.title-text {
+  font-size: map-get($map: $font-size, $key: sub-heading);
+  font-weight: map-get($map: $font-weight, $key: heading);
+}

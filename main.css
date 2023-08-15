@@ -130,7 +130,6 @@ form .main-header__form--measurement {
 .main-header__results--content {
   color: white;
   background-color: blue;
-  border-radius: 25px;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -214,7 +213,7 @@ form .main-header__form--measurement {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 600px) {
   .main-header,
   .main-header__title,
   .main-header__content {
@@ -229,10 +228,42 @@ form .main-header__form--measurement {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+  .main-header__form--container form {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "metric imperial" "height weight" "results results";
+  }
   .main-header__form-header {
     grid-column: span 2;
   }
   .main-header__results--container {
     grid-column: span 2;
+  }
+  .metric {
+    grid-area: metric;
+  }
+  .imperial {
+    grid-area: imperial;
+  }
+  .main-form__height {
+    grid-area: height;
+  }
+  .main-form__weight {
+    grid-area: weight;
+  }
+  .main-form__height,
+  .main-from__weight {
+    width: 90%;
+  }
+  .results {
+    display: flex;
+    align-items: center;
+  }
+  .results .results__section-img img {
+    width: 100%;
+  }
+  .results .results__content {
+    width: 100%;
   }
 }
